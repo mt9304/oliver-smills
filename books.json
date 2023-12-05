@@ -1,0 +1,16 @@
+[
+    {
+        "title" : "My Title1", 
+        "publishDate" : "December 3, 2023",
+        "coverImg" : "/img/title1.png",
+        "description" : "my Description 1",
+        "amazonLink" :  "http://www.amazon.ca"
+    },
+    {
+        "title" : "My Title2", 
+        "publishDate" : "December 5, 2023",
+        "coverImg" : "/img/title2.png",
+        "description" : "my Description 2",
+        "amazonLink" :  "http://www.amazon.ca"
+    }
+]
