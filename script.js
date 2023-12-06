@@ -1,21 +1,35 @@
-document.addEventListener("DOMContentLoaded", function () {
+
+window.addEventListener("load", function () {
+    console.log("Running");
+    //Overlay fade and zoom on first loading page. 
+    /*
     const overlay = document.createElement("div");
     overlay.classList.add("overlay");
-    overlay.style.opacity = "0.8"; // Set initial opacity to 80%
+    overlay.style.opacity = "0.9"; // Set initial opacity to 80%
+
+    overlay.textContent = "Loading...";
+    overlay.style.textAlign ="center";
+    overlay.style.paddingTop ="20%";
+    overlay.style.color ="white";
+    overlay.style.position ="fixed";
     document.body.appendChild(overlay);
+    */
+
+    const overlay = document.getElementsByClassName("overlay")[0];
   
     const homeSection = document.getElementById("home");
     homeSection.style.animation = "zoomBackground 2s forwards";
   
     setTimeout(() => {
       overlay.style.opacity = "0";
-      overlay.style.transition = "opacity 1s"; // Changed duration to 1 second
+      overlay.style.transition = "opacity 3s"; // Changed duration to 1 second
     }, 0); // Schedule the overlay transition to start immediately
   
     setTimeout(() => {
       overlay.style.display = "none";
     }, 1000); // Changed the delay to 1000ms (1 second) for hiding the overlay
   });
+
 /*
 document.addEventListener("DOMContentLoaded", function () {
     const overlay = document.createElement("div");
@@ -63,7 +77,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const amazonLink = document.createElement("a");
         amazonLink.href = book.amazonLink;
-        amazonLink.textContent = "Buy on Amazon";
+        amazonLink.textContent = "View on Amazon";
+        amazonLink.target = "_blank";
         bookInfo.appendChild(amazonLink);
 
         bookItem.appendChild(bookInfo);
@@ -71,4 +86,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     booksSection.appendChild(carousel);
   });
-  

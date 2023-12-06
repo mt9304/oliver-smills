@@ -6,52 +6,69 @@
   <title>Children's Storybooks</title>
   <link rel="stylesheet" href="style.css">
 
+
   <script>
     const booksData = [
       {
         "title" : "My Title1", 
         "publishDate" : "December 3, 2023",
         "coverImg" : "/img/title1.png",
-        "description" : "my Description 1",
+        "description" : "my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 ",
         "amazonLink" :  "http://www.amazon.ca"
       },
       {
         "title" : "My Title2", 
         "publishDate" : "December 5, 2023",
         "coverImg" : "/img/title2.png",
-        "description" : "my Description 2",
+        "description" : "my Description 2my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 my Description 1 ",
         "amazonLink" :  "http://www.amazon.ca"
       }
       // Add more book objects as needed
     ];
   </script>
+
+
 </head>
 <body>
-
+<div class="overlay" style="opacity: 0.9; font-size: x-large; color: white; text-align: center; padding-top: 20%; font-weight: bold;">Loading...</div>
 <nav>
   <ul>
     <li><a href="#home">Home</a></li>
+    <li><a href="#author">Author</a></li>
     <li><a href="#books">Books</a></li>
-    <li><a href="#author">About the Author</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
-<main>
+<main id="bg">
   <section id="home" class="section">
     <!-- Home content -->
-  </section>
-
-  <section id="books" class="section">
-    <!-- Books content -->
+    <!--div id="home-content"><h1 style="color: white;">W E L C O M E</h1></div-->
   </section>
 
   <section id="author" class="section">
-    <!-- Author content -->
+    <div id="author-content">
+        <h1>About Oliver Smills</h1>
+        <p>
+            Oliver Smills is a children's book author who delights in crafting stories that entertain and engage young minds. His collection spans from imaginative storybooks to rhythmic rhyming tales. 
+            Residing in British Columbia, Canada, Smills leads a fullfilling life as a full-time software developer and a dedicated author in his spare time. 
+            Outside of literature, Oliver finds joy in spending quality moments with pets — both his own and those of friends — and indulging in the challenges of indoor rock climbing.
+            Oliver Smills' commitment to crafting imaginative tales and fostering a love for reading among young audiences remains at the heart of his writing journey.
+        </p>
+    </div>
+  </section>
+
+  <div id="books-header">
+    <h1>Books</h1>
+  </div>
+
+  <section id="books" class="section">
+
   </section>
 
   <section id="contact" class="section">
     <!-- Contact content -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfFHwhsJUlXBV2s8-P8j1lgI9dwFFpfS5FO5lqQfYT6URYPpg/viewform?embedded=true" width="640" height="721" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
   </section>
 </main>
 
