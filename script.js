@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const description = document.createElement("p");
         description.textContent = book.description;
+        description.style.textAlign = "left";
         bookInfo.appendChild(description);
 
         const amazonLink = document.createElement("a");
