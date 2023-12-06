@@ -1,6 +1,5 @@
 
 window.addEventListener("load", function () {
-    console.log("Running");
     //Overlay fade and zoom on first loading page. 
     /*
     const overlay = document.createElement("div");
@@ -55,10 +54,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const bookItem = document.createElement("div");
         bookItem.classList.add("book");
 
+        const imgWrapper = document.createElement("div");
+        imgWrapper.classList.add("bookImgWrapper");
+
         const bookCover = document.createElement("img");
         bookCover.src = book.coverImg;
         bookCover.alt = book.title;
-        bookItem.appendChild(bookCover);
+        imgWrapper.appendChild(bookCover);
+        bookItem.appendChild(imgWrapper);
 
         const bookInfo = document.createElement("div");
         bookInfo.classList.add("book-info");

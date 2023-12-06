@@ -96,15 +96,20 @@ body {
     scroll-snap-align: start;
     flex: 0 0 auto;
     margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 20px;
+    border: 2px solid #ccc;
     width: 300px; /* Set as per your design */
     color: white;
   }
   
+  .bookImgWrapper {
+    text-align: center;
+  }
+
   .book img {
-    width: 100%;
+    width: 50%;
     height: auto;
+    border: 1px solid white;
   }
   
   .book-info {
@@ -131,6 +136,7 @@ body {
 
   #books {
     margin: 10%;
+    margin-top: 0;
   }
 
   /* End Carousel */
@@ -151,7 +157,7 @@ body {
     margin-top: 20%;
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: -20%;
+
     color: white;
     text-align: center;
   }
@@ -163,4 +169,8 @@ body {
   #home-content {
     padding: 15px;
     background-color: rgba(23, 123, 120, 0.75);
+  }
+
+  iframe {
+    height: 100%;
   }
